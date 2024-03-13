@@ -1,0 +1,164 @@
+@font-face {
+    font-family: 'Rect';
+    src: url('../fonts/moinho.otf');
+}
+
+* {
+    font-family: 'Rect', sans-serif;
+}
+
+section {
+    margin-bottom: 230px;
+}
+
+h1 {
+    font-size: 6rem;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+p {
+    font-size: 2rem;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 1440px;
+}
+
+.wrapper {
+    min-height: 100%;
+    width: 100%;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 300px;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+}
+
+header {
+    border: 1px solid #000;
+    border-width: 0 0 5px 0;
+    margin-bottom: 300px;
+    z-index: 5;
+    background-color: #fff;
+}
+
+.logo img {
+    width: 100px;
+    height: 100px;
+}
+.logo:hover {
+    transform: rotate(10deg);
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.item:hover {
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    transform: rotate(10deg);
+}
+
+.socials ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+.main img {
+    animation: rotate 1s infinite;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.btn{
+    font-size: 2rem;
+    border: 5px solid #000;
+    border-radius: 50% 50% 5px 50% ;
+    padding: 30px 20px;
+    align-self: flex-start;
+}
+
+.btn:hover {
+    transform: scale(1.2);
+}
+
+button {
+    font-size: 4rem;
+    background: transparent;
+}
+
+button:hover {
+    animation: rotate 1s infinite;
+}
+
+.text {
+    max-width: 1200px;
+}
+
+.contract {
+    text-align: center;
+}
+
+.addres {
+    display: block;
+    cursor: pointer;
+    font-size: 3rem;
+}
+
+.addres:hover {
+    text-decoration: underline;
+    text-underline-offset: 20px;
+    transform: rotate(-10deg);
+}
+
+.tokenomics {
+    margin-bottom: 120px;
+}
+
+footer {
+    text-align: center;
+    border: 1px solid #000;
+    border-width: 5px 0 5px 0;
+    font-size: 2rem;
+    padding: 10px 0 15px 0px;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(10deg);
+    }
+    50% {
+        transform: rotate(-10deg);
+    }
+    to {
+        transform: rotate(10deg);
+    }
+}
